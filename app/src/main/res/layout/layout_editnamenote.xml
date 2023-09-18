@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/radius12">
+
+        <TextView
+            android:id="@+id/tvlayouteditnamename"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên ghi chú muốn đổi"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvlayouteditnamenotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên cho thư mục này"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtnamelayouteditname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên"
+            android:padding="5dp"
+            android:background="@drawable/radius8_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#707070"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_destroyeditname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hủy"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textColor="#81A34D"
+                android:padding="10dp"
+                android:background="@drawable/textview_selector"/>
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="#707070"/>
+            <TextView
+                android:id="@+id/tv_saveeditname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lưu"
+                android:textStyle="bold"
+                android:textColor="#A5A5A5"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:enabled="false"
+                android:background="@drawable/tv_selectorright"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

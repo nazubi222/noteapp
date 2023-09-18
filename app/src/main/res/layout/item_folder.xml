@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeloutfolderall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#878787"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/imgfolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/folder"
+            android:layout_alignParentLeft="true"
+            android:foregroundGravity="center_vertical"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/tvitemnamefolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tất cả"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/imgfolder"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tvitemcountfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/imgabcd"
+        android:text="0"
+        android:textColor="#707070"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imgabcd"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"/>
+    </RelativeLayout>

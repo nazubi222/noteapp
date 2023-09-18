@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rltcreatenote">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lnabc">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:id="@+id/lnexitcreatenote"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/baseline_arrow_back_ios_24"/>
+                    <TextView
+                        android:id="@+id/tvnamefolderexit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tất cả"
+                        android:textColor="#81A34D"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/imglockcreatenote"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/locknote"
+                        android:visibility="invisible"/>
+                    <ImageView
+                        android:id="@+id/imgmorecreatenote"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/more"/>
+
+                    <TextView
+                        android:id="@+id/tvfinshedcreatenote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xong"
+                        android:textColor="#81A34D"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarcratenote"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/radius12stroke">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_margin="2dp"
+                    android:background="@color/white">
+                    <AutoCompleteTextView
+                        android:id="@+id/autohompleteheading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Heading1"
+                        android:textSize="15dp"
+                        android:background="@color/white"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:layout_gravity="center"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/action_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/boldtext" />
+                <ImageButton
+                    android:id="@+id/action_italic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/italic" />
+                <ImageButton
+                    android:id="@+id/action_underline"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/underline"/>
+                <ImageButton
+                    android:id="@+id/action_insert_bullets"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/list" />
+                <ImageButton
+                    android:id="@+id/action_insert_numbers"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/listnumber" />
+                <ImageButton
+                    android:id="@+id/action_undo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/undo_circular_arrow"/>
+                <ImageButton
+                    android:id="@+id/action_redo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:src="@drawable/redo_arrow_symbol"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/lnabc">
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvessa"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="HTML Preview"-->
+<!--            android:textSize="12sp"-->
+<!--            android:top="@id/editor" />-->
+
+<!--        <TextView-->
+<!--                android:id="@+id/preview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp" />-->
+
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgpluscreatenote"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/plus" />
+
+    <LinearLayout
+        android:id="@+id/lnlockcreatenote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_below="@id/lnabc"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/locknote2"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú này đã được khóa"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/tvopenlocknote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem ghi chú"
+            android:layout_margin="10dp"
+            android:textColor="#81A34D"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius12top">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        android:paddingBottom="50dp">
+<!--        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tùy chọn"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="#81A34D"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lnpinbtsheet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/radius12white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/imglnpinbtsheet"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pin" />
+                <TextView
+                    android:id="@+id/tvlnpinbtsheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ghim"
+                    android:padding="2dp"
+                    android:textSize="18dp"
+                    android:textColor="#ECAA18"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnlockbtsheet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/radius12white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/imglnlockbtsheet"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"/>
+                <TextView
+                    android:id="@+id/tvlnlockbtsheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Khóa"
+                    android:padding="2dp"
+                    android:textSize="18dp"
+                    android:textColor="#071F9C"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lndeletebtsheet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/radius12white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imglndeletebtsheet"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/trash_can"/>
+                <TextView
+                    android:id="@+id/tvlndeletebtsheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xóa"
+                    android:padding="2dp"
+                    android:textSize="18dp"
+                    android:textColor="#D1051D"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
