@@ -63,11 +63,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:visibility="visible">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text="iCloud"
+                        android:text="Anhtt's Phone"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
